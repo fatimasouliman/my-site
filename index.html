@@ -5,49 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my site</title>
     <link rel="stylesheet" href="./assest//css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/css/all.min.css">
 </head>
 <body>
+    <!----start home------->
     <div class="home" >
         <img class="circel circel1" src="assest/images/Ellipse 1.png">
         <img class="circel circel2" src="assest/images/Ellipse 1.png">
+        <!------- start navbar--------->
         <nav class="navbar">
             <h1 class="logo">pragya</h1>
-            <ul class="items">
-                <li class="item">about</li>
-                <li class="item">work</li>
-                <li class="item">pinterest</li>
-                <li class="item">youtube</li>
-                <li class="item">contact</li>
-            </ul>
+            <div class="items">
+               
+                <ul class="list">
+                    <li class="item"><a class="active" href="#hero">about</a></li>
+                    <li class="item"><a href="#works">work</a></li>
+                    <li class="item"><a>pinterest</a></li>
+                    <li class="item"><a>youtube</a></li>
+                    <li class="item"><a href="#contact">contact</a></li>
+                </ul>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            
+            <div class="list-down">
+                <div class="line"></div>
+                <div class="line line-short"></div>
+                <div class="line"></div>
+            </div>
         </nav>
-        <section class="hero">
-            <div class="descrabtion">
-                <h1>Hi! I’m Pragya.<br>A Designer.</h1>
-                <p>Hello everyone. As a moonlighting developer and generalist designer,I'm<br>
-                    passionate about creating interfaces that are fun, useful, and user-<br>centric.</p>
-                <div class="buttons">
-                    <button class="btn1">WORKS</button>
-                    <button class="btn2" >GET IN TOUCH</button>
+         <!------- end navbar--------->
+
+        <!------- start hero--------->
+        <section id="hero" class="hero">
+            <!------- start about--------->
+            <div class="about">
+                <div class="descrabtion">
+                    <h1>Hi! I’m Pragya.<br>A Designer.</h1>
+                    <p>Hello everyone. As a moonlighting developer and generalist designer,I'm<br>
+                        passionate about creating interfaces that are fun, useful, and user-<br>centric.</p>
+                    <div class="buttons">
+                        <button class="btn1">WORKS</button>
+                        <button class="btn2" >GET IN TOUCH</button>
+                    </div>
+                </div>
+                <div class="photo-side">
+                    <img src="./assest/images/7118028_3343973-removebg-preview 1.png">
                 </div>
             </div>
-            <div class="photo-side">
-                <img src="./assest/images/7118028_3343973-removebg-preview 1.png">
+           <!------- end about --------->
+
+           <!------- start worked--------->
+            <div  class="worked">
+                <div class="center">
+                    <h1>WORKED WITH</h1>
+                    <div class="clients">
+                        <img style="width: 14.4465291%; height: 42px;" src="./assest/images/google-logo 1.png">
+                        <img style="width: 13.2270169%; height: 50px;" src="./assest/images/disney-logo 1.png">
+                        <img style="width: 10.8818011%; height: 93px;" src="./assest/images/adobe-logo 1.png">
+                        <img style="width: 14.4465291%; height: 69px;" src="./assest/images/apple-logo 1.png">
+                    </div>
+                </div>     
             </div>
+            <!------- end worked--------->
+
         </section>
-        <section class="worked">
-            <div class="center">
-                <h1>WORKED WITH</h1>
-                <div class="clients">
-                    <img style="width: 14.4465291%; height: 42px;" src="./assest/images/google-logo 1.png">
-                    <img style="width: 13.2270169%; height: 50px;" src="./assest/images/disney-logo 1.png">
-                    <img style="width: 10.8818011%; height: 93px;" src="./assest/images/adobe-logo 1.png">
-                    <img style="width: 14.4465291%; height: 69px;" src="./assest/images/apple-logo 1.png">
-                </div>
-            </div>     
-        </section>
-        <section class="works">
+        <!------- end hero--------->
+    </div>
+    <!------end home------->
+
+    <!----start works section------->
+    <section id="works" class="works">
             <h1 class="title">WORKS THAT I DO</h1>
-            <div class="hero designs">
+            <div class="about designs">
                 <div class="photo-side">
                     <img src="./assest/images/UI 1.png">
                 </div>
@@ -61,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero designs">
+            <div class="about designs">
                 <div class="descrabtion">
                     <h1>Product<br>Designing</h1>
                     <p>With an innate talent for product design, my visionary creations<br>
@@ -75,7 +107,7 @@
                     <img src="./assest/images/product-design 1.png">
                 </div>
             </div>
-            <div class="hero designs">
+            <div class="about designs">
                 <div class="photo-side">
                     <img src="./assest/images/web-design 1.png">
                 </div>
@@ -90,8 +122,62 @@
                 </div>
                 
             </div>
-        </section>
-       
+    </section>
+     <!----end works section------->
+
+    <!----start test section------->
+    <section class="test">
+    <div class="head">
+        <span>TESTOMONIALS</span>
+        <h1>Read what others<br>have to say</h1>
     </div>
+    
+    <div class="people">
+        <div class="person">
+            <img src="./assest/images/IMG_20221211_205840 1.png">
+            <div class="text">
+                <h2>PRAGYA DONGRE</h2>
+                <p>Nobody hires me, i am<br>
+                        my client myself hehe</p>
+            </div>
+            
+        </div>
+        <div class="person">
+            <img src="./assest/images/InShot_20221202_210748430 2.png">
+            <div class="text">
+                <h2>PRAGYA DONGRE</h2>
+                <p>You can fucking do it -<br>
+                        my bf</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="./assest/images/InShot_20220212_182322002 1.png">
+            <div class="text">
+                <h2>PRAGYA DONGRE</h2>
+                <p>I love you sushiiii, Thanks<br> for everything </p>
+            </div>
+        </div>
+    </div>
+    </section>
+     <!----end test section------->
+
+      <!----start contact section------->
+    <section id="contact" class="contact">
+        <div class="touch-contact">
+            <span>GET IN TOUCH</span>
+            <h1>
+                Make your<br> designs more<br> fun by hiring us
+            </h1>
+            <button class="btn-contact">
+                CONTACT
+            </button>
+        </div>
+        <div class="border"></div>
+    </section>
+    <!----end contact section------->
+       
+    
+    
 </body>
+<script src="./assest/js/js.js"></script>
 </html>
